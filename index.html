@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // 単位の計算
+    function convertToMm(n, s) {
+      return n * [1000000, 1000, 10, 1][["km", "m", "cm", "mm"].indexOf(s)];
+    }
+
+    // console.log(convertToMm(1, "km")); // 1000000
+    // console.log(convertToMm(54, "km")); // 54000000
+    // console.log(convertToMm(2, "cm")); // 20
+
+
+    // 数の比較
+    function compareNumbers(a, b) {
+      return a > b ? a : a < b ? b : 'eq';
+    }
+
+    // console.log(compareNumbers(2, 5)); // 5
+    // console.log(compareNumbers(10, 9)); // 10
+    // console.log(compareNumbers(2, 2)); // eq
+
+
+    // 例題
+    function calculateArea(a, b) {
+      return a * b;
+    }
+
+    // console.log(calculateArea(2, 5)); // 10
+    // console.log(calculateArea(10, 10)); // 100
+  </script>
+</body>
+
+</html>
